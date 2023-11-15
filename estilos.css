@@ -1,0 +1,57 @@
+/*resetear bordes y margenes*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: rgb(236, 12, 12); 
+    font-family: sans-serif
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+header{
+    display: flex;
+    background: url("img/binario.jpg");
+    min-height: 90px; 
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 150px;
+    height: 100;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 10px;
+    
+}
+nav a {
+    background:rgb(114, 224, 3);
+    padding: 4px 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 6px;  
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;}
+        nav{
+            padding: 10px;
+        }
+    
